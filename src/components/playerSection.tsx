@@ -43,7 +43,7 @@ const PlayersSection: React.FC = () => {
 
 
                         <div className="mt-6">
-                            <a href="#" className="px-5 py-3 rounded-md bg-green-600 font-semibold">Quero jogar</a>
+                            <a href="/athlete-info" className="px-5 py-3 rounded-md bg-green-600 font-semibold">Quero jogar</a>
                         </div>
                     </div>
                 </motion.div>

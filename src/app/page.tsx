@@ -9,6 +9,7 @@ import PartnersSection from '../components/partnerSection'
 import StatsSection from '../components/statsSection'
 import TestimonialsSection from '../components/testimonialsSection'
 import Footer from '../components/footer'
+import AboutSection from '@/components/aboutSection'
 
 
 export default function Page() {
@@ -22,6 +23,7 @@ export default function Page() {
           <PartnersSection />
           <StatsSection />
           <TestimonialsSection />
+          <AboutSection />
         </div>
       </div>
       <Footer />

@@ -46,8 +46,8 @@ const OwnersSection: React.FC = () => {
 
 
                     <div className="mt-6 flex gap-3">
-                        <a href="#" className="px-5 py-3 rounded-md bg-green-600 font-semibold">Quero cadastrar</a>
-                        <a href="#" className="px-5 py-3 rounded-md border border-gray-700">Saiba mais</a>
+                        <a href="/owner-register" className="px-5 py-3 rounded-md bg-green-600 font-semibold">Quero cadastrar</a>
+                        <a href="/owner-info" className="px-5 py-3 rounded-md border border-gray-700">Saiba mais</a>
                     </div>
                 </motion.div>
 
