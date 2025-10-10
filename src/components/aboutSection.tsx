@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const aboutItems = [
     {
@@ -32,7 +33,7 @@ export default function AboutSection() {
                 </p>
             </motion.div>
 
-            <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                 {aboutItems.map((item) => (
                     <motion.div
                         key={item.title}
@@ -46,6 +47,16 @@ export default function AboutSection() {
                         <p className="text-gray-400 text-sm">{item.desc}</p>
                     </motion.div>
                 ))}
+            </div>
+
+            {/* Botão FAQ */}
+            <div className="text-center mt-8">
+                <Link
+                    href="/faq"
+                    className="inline-block px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-500 transition"
+                >
+                    Perguntas Frequentes (FAQ)
+                </Link>
             </div>
         </section>
     );

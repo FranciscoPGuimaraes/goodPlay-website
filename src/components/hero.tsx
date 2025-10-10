@@ -48,15 +48,27 @@ const Hero: React.FC = () => {
                         quadras e engajar atletas com gamificação, campeonatos e parcerias.
                     </p>
 
-                    <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-                        <Link href="#owners" className="inline-flex items-center gap-3 rounded-full bg-green-600 px-6 py-3 font-semibold shadow-lg hover:bg-green-500 transition">
+                    <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center w-full max-w-xs sm:max-w-none">
+                        <motion.a
+                            href="#owners"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            transition={{ duration: 0.3, ease: "easeOut" }}
+                            className="w-full sm:w-auto inline-flex items-center justify-center gap-3 rounded-full bg-green-600 px-6 py-3 font-semibold shadow-lg hover:bg-green-500 transition"
+                        >
                             Cadastre sua quadra
-                        </Link>
-
-                        <Link href="#players" className="inline-flex items-center gap-3 rounded-full border border-gray-700 px-6 py-3 hover:bg-white/5 transition">
+                        </motion.a>
+                        <motion.a
+                            href="#players"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            transition={{ duration: 0.3, ease: "easeOut" }}
+                            className="w-full sm:w-auto inline-flex items-center justify-center gap-3 rounded-full border border-gray-700 px-6 py-3 hover:bg-white/5 transition bg-white/20 backdrop-blur-md"
+                        >
                             Sou atleta — ver vantagens
-                        </Link>
+                        </motion.a>
                     </div>
+
                 </motion.div>
 
                 {/* Ícones de redes sociais */}
